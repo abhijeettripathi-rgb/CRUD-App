@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form action="/post" method="POST">
+    <label for="id">UserID:</label>
+    <input type="text" id="UserID" name="UserID" required><br><br>
+    
+      <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  
+    
+  </form>
+  <form class="btn" action="/delete" method="GET">
+
+    <input type="submit" value="Delete">
+    
+  </form>
+  <form class="btn" action="/update" method="GET">
+
+    <input type="submit" value="update">
+    
+  </form>
+  <form class="btn" action="/getuser" method="GET">
+
+    <input type="submit" value="getuser">
+    
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
+
